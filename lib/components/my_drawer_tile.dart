@@ -15,11 +15,12 @@ class MyDrawerTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: onTap,
       title: Text(
         text,
         style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),
       ),
-      leading: Icon(icon,color: Theme.of(context).colorScheme.inversePrimary,),
+      leading: Icon(icon, color: Theme.of(context).colorScheme.inversePrimary),
     );
   }
 }
