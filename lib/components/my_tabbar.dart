@@ -1,10 +1,22 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/model/food.dart';
 
 class MyTabbar extends StatelessWidget {
-  const MyTabbar({super.key});
+  final TabController tabController;
+
+  const MyTabbar({super.key, required this.tabController});
+
+  List<Tab> _buildCategoryTabs() {
+    return FoodCategory.values.map((category) {
+      return Tab(text: category.toString().split('.').last);
+    }).toList();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      child: TabBar(controller: tabController, tabs: _buildCategoryTabs()),
+    );
   }
 }
