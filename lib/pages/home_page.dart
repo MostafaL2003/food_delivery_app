@@ -45,13 +45,16 @@ class _HomePageState extends State<HomePage>
   List<Widget> getFoodInCategory(List<Food> fullMenu) {
     return FoodCategory.values.map((category) {
       List<Food> categoryMenu = _filterMenuCategory(category, fullMenu);
-      return ListView.builder(
-        itemCount: categoryMenu.length,
-        physics: const NeverScrollableScrollPhysics(),
-        itemBuilder: (context, index) {
-          final food = categoryMenu[index];
-          return MyFoodListtile(food: food, onTap: () {});
-        },
+      return Container(
+        color: Theme.of(context).colorScheme.surface,
+        child: ListView.builder(
+          itemCount: categoryMenu.length,
+          physics: const NeverScrollableScrollPhysics(),
+          itemBuilder: (context, index) {
+            final food = categoryMenu[index];
+            return MyFoodListtile(food: food, onTap: () {});
+          },
+        ),
       );
     }).toList();
   }
