@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/components/my_description.dart';
 import 'package:food_delivery_app/components/my_drawer.dart';
@@ -8,6 +7,7 @@ import 'package:food_delivery_app/components/my_sliver_appbar.dart';
 import 'package:food_delivery_app/components/my_tabbar.dart';
 import 'package:food_delivery_app/model/food.dart';
 import 'package:food_delivery_app/model/restaurant.dart';
+import 'package:food_delivery_app/pages/food_page.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage>
           physics: const NeverScrollableScrollPhysics(),
           itemBuilder: (context, index) {
             final food = categoryMenu[index];
-            return MyFoodListtile(food: food, onTap: () {});
+            return MyFoodListtile(food: food, onTap: () =>Navigator.push(context, MaterialPageRoute(builder: (context) => FoodPage(food: food),)));
           },
         ),
       );
