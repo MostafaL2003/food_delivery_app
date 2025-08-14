@@ -107,6 +107,8 @@ lib/
 | Home Screen | Food Details | Cart | Payment |
 |------------|-------------|------|---------|
 | ![Home](screenshots/Homepage.png)|![Details](screenshots/Orderpage.png) |![Cart](screenshots/Catpage.png) |![Cart](screenshots/Paymentpage.png)) |
+| Login Screen | Register Page | Receipt | Settings page |
+| ![Login](screenshots/Loginpage.png)|![Details](screenshots/Registerpage.png) |![Cart](screenshots/Receiptpage.png) |![Cart](screenshots/Darkmode.png)) |
 
 ## 🛠️ Dependencies
 
