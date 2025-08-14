@@ -32,7 +32,6 @@ A modern, feature-rich food delivery application built with Flutter and Firebase
 - **Payment Confirmation**: Review order details before payment
 
 ### 📦 Order Management
-- **Order Tracking**: Real-time delivery progress tracking
 - **Digital Receipts**: Detailed order receipts with timestamps
 - **Order History**: Firebase Firestore integration for order persistence
 
@@ -107,7 +106,7 @@ lib/
 
 | Home Screen | Food Details | Cart | Payment |
 |------------|-------------|------|---------|
-| ![Home](screenshots/home.png) | ![Details](screenshots/details.png) | ![Cart](screenshots/cart.png) | ![Payment](screenshots/payment.png) |
+| ![Home](screenshots/Homepage.png) | ![Details](screenshots/details.png) | ![Cart](screenshots/cart.png) | ![Payment](screenshots/payment.png) |
 
 ## 🛠️ Dependencies
 
